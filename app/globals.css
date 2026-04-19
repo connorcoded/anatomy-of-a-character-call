@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+}
+
+body {
+  overflow-x: clip;
+}
+
+body {
+  background-color: #FAFAFA;
+  color: #0A0A0A;
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Selection */
+::selection {
+  background: #14B8A6;
+  color: #FAFAFA;
+}
+
+/* Anchor offset so jump-links don't hide under reading-progress bar */
+.anchor-offset {
+  scroll-margin-top: 80px;
+}
+
+/* Subtle hover: # link next to H2 anchors */
+.h2-anchor {
+  position: relative;
+}
+.h2-anchor .anchor-link {
+  opacity: 0;
+  transition: opacity 120ms ease;
+}
+.h2-anchor:hover .anchor-link,
+.h2-anchor:focus-within .anchor-link {
+  opacity: 1;
+}
+
+/* Accordion content — always mounted (forceMount) so crawlers see every
+ * answer in the static HTML. CSS transition on height + opacity handles the
+ * expand/collapse; height uses the Radix-exposed --radix-accordion-content-height. */
+.accordion-content {
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  transition: height 220ms ease-out, opacity 220ms ease-out;
+}
+.accordion-content[data-state="open"] {
+  height: var(--radix-accordion-content-height);
+  opacity: 1;
+}
+
+/* Prose tweaks inside the article column */
+.prose-column p {
+  font-size: 18px;
+  line-height: 1.65;
+  color: #0A0A0A;
+}
+.prose-column p + p {
+  margin-top: 1.15rem;
+}
