@@ -2,7 +2,7 @@
 
 A single-page Next.js 14 landing page that publishes the technical essay *Anatomy of a Character Call* — a layer-by-layer explainer of how Runway Characters generates conversational video avatars frame by frame over WebRTC on GWM-1. The page includes five hand-rolled SVG visuals (latency waterfall, pipeline comparison, context cone, call timeline, shareable field-guide card), an accessible Radix-based FAQ accordion, and FAQPage JSON-LD in `<head>` for rich-result eligibility.
 
-**Live:** _to be added after deploy_
+**Live:** https://claudecodelandingpage.vercel.app
 
 ## Stack
 
