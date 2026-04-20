@@ -5,6 +5,7 @@ import { PipelineCompare } from "./PipelineCompare";
 import { ContextCone } from "./ContextCone";
 import { CallTimeline } from "./CallTimeline";
 import { FiveQuestionsCard } from "./FiveQuestionsCard";
+import { CallSimulator } from "./CallSimulator";
 import { ComparisonTable } from "./ComparisonTable";
 import { ChecklistList } from "./ChecklistList";
 import { SectionHeading } from "./SectionHeading";
@@ -183,6 +184,8 @@ export function Article() {
       <VisualBreakout>
         <CallTimeline />
       </VisualBreakout>
+
+      <CallSimulator />
 
       {/* Section 5: Test you can take */}
       <SectionHeading id="vendor-test" eyebrow="A test you can take to any vendor">
