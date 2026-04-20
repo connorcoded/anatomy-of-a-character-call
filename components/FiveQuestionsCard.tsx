@@ -50,9 +50,6 @@ export function FiveQuestionsCard() {
       <div
         className="mx-auto max-w-[640px] border-l-[6px] border-accent bg-accent/[0.05] px-6 py-6 shadow-[0_2px_0_rgba(20,184,166,0.08)] md:px-8 md:py-8"
       >
-        <p className="mb-3 font-mono text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-accent">
-          Field guide · screenshot this
-        </p>
         <h3 className="mb-6 font-serif text-[1.5rem] font-semibold leading-tight tracking-tight text-ink md:text-[1.75rem]">
           Five questions that cut through the demo reel.
         </h3>
@@ -120,10 +117,6 @@ export function FiveQuestionsCard() {
             </span>
           </p>
         </div>
-
-        <p className="mt-4 font-mono text-[0.7rem] uppercase tracking-[0.18em] text-mute">
-          From: Anatomy of a Character Call
-        </p>
       </div>
     </motion.figure>
   );

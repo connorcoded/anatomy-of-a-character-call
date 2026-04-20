@@ -7,7 +7,6 @@ import { CallTimeline } from "./CallTimeline";
 import { FiveQuestionsCard } from "./FiveQuestionsCard";
 import { CallSimulator } from "./CallSimulator";
 import { ComparisonTable } from "./ComparisonTable";
-import { ChecklistList } from "./ChecklistList";
 import { SectionHeading } from "./SectionHeading";
 
 export function Article() {
@@ -192,8 +191,6 @@ export function Article() {
         How can you tell if a &ldquo;real-time&rdquo; avatar is actually real-time?
       </SectionHeading>
       <p>There are five questions that cut through the demo reel.</p>
-
-      <ChecklistList />
 
       <p>
         The first three are architecture questions. The last two are integration questions. A
