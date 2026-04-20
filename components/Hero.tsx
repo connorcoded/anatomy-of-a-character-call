@@ -14,14 +14,6 @@ export function Hero() {
       <p className="mt-6 font-sans text-sm text-mute">
         By <span className="text-ink">[Author]</span> · April 2026 · 5 min read
       </p>
-
-      <div className="mt-10 border-l-2 border-accent bg-white/60 p-5">
-        <p className="font-sans text-[0.95rem] font-semibold leading-relaxed text-ink">
-          Runway Characters, launched March 2026, is a real-time video agent API that generates
-          conversational avatars frame by frame over WebRTC. It runs on GWM-1, Runway&apos;s
-          General World Model.
-        </p>
-      </div>
     </section>
   );
 }
