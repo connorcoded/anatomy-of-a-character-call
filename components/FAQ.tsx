@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import { faqEntries } from "@/lib/faq-schema";
-import { PlaceholderCallout } from "./PlaceholderCallout";
 import {
   Accordion,
   AccordionContent,
@@ -49,12 +48,6 @@ export function FAQ() {
           common ground; the Character handles the long tail.
         </p>
       </div>
-
-      <PlaceholderCallout>
-        Embed Runway Character here. Avatar configured as a Characters product expert; knowledge
-        base: the full Characters docs, this article, and the five-question checklist above. The
-        FAQ below seeds the common ground; the Character handles the long tail.
-      </PlaceholderCallout>
 
       <Accordion
         type="single"
