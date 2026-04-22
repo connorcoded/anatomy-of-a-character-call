@@ -1,5 +1,4 @@
 import { PlaceholderCallout } from "./PlaceholderCallout";
-import { VisualSlot } from "./VisualSlot";
 import { LatencyWaterfall } from "./LatencyWaterfall";
 import { PipelineCompare } from "./PipelineCompare";
 import { ContextCone } from "./ContextCone";
@@ -63,9 +62,7 @@ export function Article() {
         image quality. Not the voice. The clock.
       </p>
 
-      <VisualBreakout>
-        <LatencyWaterfall />
-      </VisualBreakout>
+      <LatencyWaterfall />
 
       {/* Section 2: Autoregressive vs pre-rendered */}
       <SectionHeading id="autoregressive" eyebrow="Autoregressive versus pre-rendered">
@@ -102,9 +99,7 @@ export function Article() {
         can do a small thing with its mouth that wasn&apos;t in any script.
       </p>
 
-      <VisualBreakout>
-        <PipelineCompare />
-      </VisualBreakout>
+      <PipelineCompare />
 
       {/* Section 3: The world model */}
       <SectionHeading id="world-model" eyebrow="The world model earns its name">
@@ -127,9 +122,7 @@ export function Article() {
         continuity. A world model&apos;s job is to make those failures rarer.
       </p>
 
-      <VisualBreakout>
-        <ContextCone />
-      </VisualBreakout>
+      <ContextCone />
 
       {/* Section 4: Putting it together */}
       <SectionHeading id="layers" eyebrow="Putting it together">
@@ -180,9 +173,7 @@ export function Article() {
         base.&rdquo; Insider access or partner permission required.
       </PlaceholderCallout>
 
-      <VisualBreakout>
-        <CallTimeline />
-      </VisualBreakout>
+      <CallTimeline />
 
       <CallSimulator />
 
@@ -222,14 +213,5 @@ export function Article() {
         the second kind.
       </p>
     </article>
-  );
-}
-
-function VisualBreakout({ children }: { children: React.ReactNode }) {
-  // Break out of the measure column to a wider (~960px) frame.
-  return (
-    <div className="relative left-1/2 my-4 w-screen max-w-breakout -translate-x-1/2 px-6 md:px-0">
-      {children}
-    </div>
   );
 }
