@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Source_Serif_4, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { faqJsonLd } from "@/lib/faq-schema";
@@ -54,7 +55,14 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
         />
       </head>
-      <body className="bg-bg text-ink antialiased">{children}</body>
+      <body className="bg-bg text-ink antialiased">
+        {children}
+        <Script
+          src="https://cdn.dev.runwayml.com/prod/widget.js"
+          data-pub-key="pub_8a7fe826f267bd90680d558ad44ec9aece01a450b2d5e88afd81ecf4b92f5fea"
+          strategy="afterInteractive"
+        />
+      </body>
     </html>
   );
 }
